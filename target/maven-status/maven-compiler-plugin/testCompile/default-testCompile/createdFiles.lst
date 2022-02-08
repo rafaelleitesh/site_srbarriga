@@ -1,0 +1,17 @@
+test\RemoverMovimentacaoTest.class
+page\MenuPage.class
+core\BasePage.class
+core\BaseTest.class
+core\DriverFactory.class
+core\Propriedades.class
+page\ContasPage.class
+core\Propriedades$Browsers.class
+page\ResumoPage.class
+page\LoginPage.class
+test\MovimentacaoTest.class
+suite\Suite.class
+page\HomePage.class
+test\ResumoTest.class
+core\DriverFactory$1.class
+page\MovimentacaoPage.class
+test\ContaTest.class
