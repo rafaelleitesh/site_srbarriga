@@ -14,4 +14,11 @@ public class ResumoPage extends BasePage {
         return obterValorTexto(By.xpath("//div[@class='alert alert-success']"));
     }
 
+    public void selecionarCombo (String ano) {
+        selecionarCombo("ano", ano);
+    }
+
+    public void clicarBotao() {
+        clicar(By.xpath("//input[@value='Buscar']"));
+    }
 }

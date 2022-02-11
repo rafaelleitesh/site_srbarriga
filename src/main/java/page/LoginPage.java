@@ -22,4 +22,7 @@ public class LoginPage extends BasePage {
         clicar(By.xpath("//button[.='Entrar']"));
     }
 
+    public void clicarReset() {
+        clicarLink("reset");
+    }
 }

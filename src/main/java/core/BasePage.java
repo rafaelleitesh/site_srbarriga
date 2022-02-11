@@ -132,7 +132,7 @@ public class BasePage {
                 break;
             }
         }
-        return idColuna;
+        return idLinha;
     }
 
     private int obterIndiceColuna(String colunaBusca, WebElement tabela) {

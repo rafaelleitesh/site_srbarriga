@@ -23,7 +23,7 @@ public class ResumoTest extends BaseTest {
 
     @Test
     public void test1_VerificarSaldoConta() {
-        Assert.assertEquals("1000.00", homePage.obterSaldoConta("RafaelAlterado"));
+        Assert.assertEquals("534.00", homePage.obterSaldoConta("Conta para saldo"));
     }
 
     @Test
@@ -37,7 +37,8 @@ public class ResumoTest extends BaseTest {
     public void test3_ResumoMensal() {
         menuPage.acessarTelaResumo();
         Assert.assertEquals("Seu Barriga - Extrato", DriverFactory.getDriver().getTitle());
-
+        resumoPage.selecionarCombo("2016");
+        resumoPage.clicarBotao();
         List<WebElement> elementosEncontrados = DriverFactory.getDriver().findElements(By.xpath("//*[@id='tabelaExtrato']/tbody/tr"));
         Assert.assertEquals(0, elementosEncontrados.size());
     }
