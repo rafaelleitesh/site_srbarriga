@@ -1,15 +1,17 @@
 package core;
 
-import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.ProfilesIni;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class DriverFactory {
-    //private static WebDriver driver;
     private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<WebDriver>() {
         protected synchronized WebDriver initialValue() {
             return initDriver();
@@ -25,17 +27,38 @@ public class DriverFactory {
 
     public static WebDriver initDriver() {
         WebDriver driver = null;
-        if (driver == null) {
-            switch (Propriedades.browser) {
+        if (Propriedades.TIPO_EXECUCAO == Propriedades.TipoExecucao.LOCAL) {
+            if (driver == null) {
+                switch (Propriedades.BROWSER) {
+                    case FIREFOX:
+                        driver = new FirefoxDriver();
+                        break;
+                    case CHROME:
+                        driver = new ChromeDriver();
+                        break;
+                }
+            }
+        }
+        if (Propriedades.TIPO_EXECUCAO == Propriedades.TipoExecucao.GRID) {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            switch (Propriedades.BROWSER) {
                 case FIREFOX:
-                    driver = new FirefoxDriver();
+                    capabilities.setBrowserName("firefox");
+                    capabilities.setPlatform(Platform.WINDOWS);
                     break;
                 case CHROME:
-                    driver = new ChromeDriver();
+                    capabilities.setBrowserName("chrome");
+                    capabilities.setPlatform(Platform.WINDOWS);
                     break;
             }
-            driver.manage().window().maximize();
+            try {
+                driver = new RemoteWebDriver(new URL("192.168.0.106:4444/wd/hub"), capabilities);
+            } catch (MalformedURLException e) {
+                System.err.println("Falha ao conectar com GRID");
+                e.printStackTrace();
+            }
         }
+        driver.manage().window().maximize();
         return driver;
     }
 
