@@ -9,8 +9,10 @@ core\Propriedades$Browsers.class
 page\ResumoPage.class
 page\LoginPage.class
 test\MovimentacaoTest.class
+core\Propriedades$TipoExecucao.class
 suite\Suite.class
 page\HomePage.class
+core\DriverFactory$2.class
 test\ResumoTest.class
 core\DriverFactory$1.class
 page\MovimentacaoPage.class

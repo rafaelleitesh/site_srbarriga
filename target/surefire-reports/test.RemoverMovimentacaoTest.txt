@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.RemoverMovimentacaoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.659 s <<< FAILURE! - in test.RemoverMovimentacaoTest
-test.RemoverMovimentacaoTest.testExcluirContaComMovimentacao  Time elapsed: 10.657 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: .//tr[1]/td[-1]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-BG5C145', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [112defbc-ab2f-487c-9851-89105ca73da3, findChildElement {id=ffc23c03-82fa-46e7-aea8-defc43be0459, using=xpath, value=.//tr[1]/td[-1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:debuggerAddress: localhost:64002, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17180, moz:profile: C:\Users\rapha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:64002/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 112defbc-ab2f-487c-9851-89105ca73da3
-	at test.RemoverMovimentacaoTest.testExcluirContaComMovimentacao(RemoverMovimentacaoTest.java:17)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 87.423 s - in test.RemoverMovimentacaoTest

@@ -13,6 +13,25 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
+    <build>
+        <testSourceDirectory>src</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <includes>
+                        <include>suite/*.java</include>
+                    </includes>
+                    <parallel>all</parallel>
+                    <threadCount>2</threadCount>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <!-- more dependencies ... -->
         <dependency>
@@ -26,6 +45,7 @@
             <version>4.13.2</version>
             <scope>compile</scope>
         </dependency>
+
         <!-- more dependencies ... -->
     </dependencies>
 

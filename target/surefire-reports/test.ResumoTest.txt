@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.ResumoTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 32.206 s <<< FAILURE! - in test.ResumoTest
-test.ResumoTest.test1_VerificarSaldoConta  Time elapsed: 11.326 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: .//tr[1]/td[2]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-BG5C145', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [14a0e491-3e71-4971-a5b9-cdf7b8bd7ede, findChildElement {id=ea01e763-4982-498c-a3a1-4d904e76c89f, using=xpath, value=.//tr[1]/td[2]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:debuggerAddress: localhost:58440, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14048, moz:profile: C:\Users\rapha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:58440/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 14a0e491-3e71-4971-a5b9-cdf7b8bd7ede
-	at test.ResumoTest.test1_VerificarSaldoConta(ResumoTest.java:26)
-
-test.ResumoTest.test2_ExcluirMovimentacao  Time elapsed: 10.741 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: .//tr[-1]/td[-1]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-BG5C145', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7c0af97e-890e-4ca4-924f-03d74a072ab6, findChildElement {id=0ef9c8d9-81ca-43a5-985d-43130d1e4ea9, using=xpath, value=.//tr[-1]/td[-1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:debuggerAddress: localhost:55227, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 18428, moz:profile: C:\Users\rapha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:55227/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7c0af97e-890e-4ca4-924f-03d74a072ab6
-	at test.ResumoTest.test2_ExcluirMovimentacao(ResumoTest.java:32)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.694 s - in test.ResumoTest

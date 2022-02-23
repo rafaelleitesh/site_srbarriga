@@ -19,11 +19,7 @@ public class ContasPage extends BasePage {
     }
 
     public void clicarAlterarConta(String valor) {
-        String rawString = "Ações";
-        byte[] bytes = rawString.getBytes(StandardCharsets.UTF_8);
-        String utf8EncodedString = new String(bytes, StandardCharsets.UTF_8);
-
-        obterCelula("Conta", valor, utf8EncodedString, "tabelaContas")
+        obterCelula("Conta", valor, "Ações", "tabelaContas")
                 .findElement(By.xpath(".//span[@class='glyphicon glyphicon-edit']")).click();
     }
 

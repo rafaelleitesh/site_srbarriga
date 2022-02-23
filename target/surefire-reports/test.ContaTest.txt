@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.ContaTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 39.864 s <<< FAILURE! - in test.ContaTest
-test.ContaTest.test2_AlterarConta  Time elapsed: 12.68 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: .//tr[1]/td[-1]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-BG5C145', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [30acc7c1-a5f6-4bf4-95ac-19ab03a65f50, findChildElement {id=06d17222-9d6f-4396-b9b6-317a8970e600, using=xpath, value=.//tr[1]/td[-1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:debuggerAddress: localhost:50063, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 7184, moz:profile: C:\Users\rapha\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50063/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 30acc7c1-a5f6-4bf4-95ac-19ab03a65f50
-	at test.ContaTest.test2_AlterarConta(ContaTest.java:30)
-
-test.ContaTest.test3_CriarContaExistente  Time elapsed: 12.699 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<J[Ã¡] existe uma conta co...> but was:<J[á] existe uma conta co...>
-	at test.ContaTest.test3_CriarContaExistente(ContaTest.java:41)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.863 s - in test.ContaTest
